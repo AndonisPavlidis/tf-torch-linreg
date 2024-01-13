@@ -16,7 +16,6 @@ torch = "^2.1.2"
 matplotlib = "^3.8.2"
 kaggle = "^1.6.3"
 
-
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.13"
 pre-commit = "^3.6.0"
