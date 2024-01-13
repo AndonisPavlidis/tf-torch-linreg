@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "tf-torch-linreg"
+version = "0.1.0"
+description = "Implementation of linear regression in PyTorch and TensorFlow."
+authors = ["apavlidis <apavlidis@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+tensorflow-macos = "~2.13"
+tensorflow-metal = "^1.1.0"
+jupyter = "^1.0.0"
+pandas = "^2.1.4"
+scikit-learn = "^1.3.2"
+torch = "^2.1.2"
+matplotlib = "^3.8.2"
+kaggle = "^1.6.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.13"
+pre-commit = "^3.6.0"
+
+[tool.ruff]
+line-length = 120
+extend-include = ["*.ipynb"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
